@@ -1,0 +1,73 @@
+@media only screen and (max-width: 450px) and (orientation: portrait) {
+  .subContainer {
+    width: 100vw !important;
+  }
+
+  .line {
+    width: 100vw;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.emptyContainer {
+  display: grid;
+  justify-items: center;
+}
+
+.emptyContainer p {
+  text-align: center;
+}
+
+.homeBtn {
+  width: 100px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.detail {
+  float:left;
+}
+
+.subContainer,
+.detail {
+  width: 50vw;
+}
+
+.line {
+  display: flex;
+}
+
+.total {
+  padding-left: 45%;
+  text-align: end;
+  padding-right: 75px;
+}
+
+.btnContainer {
+  display: inline;
+}
+
+.buyBtn {
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  width: 101px;
+  height: 41px;
+  background-color: lightgray;
+}
+
+.clearCart {
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  width: 69px;
+  height: 41px;
+  background-color: lightgray;
+  float: right;
+}

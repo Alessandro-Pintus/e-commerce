@@ -1,0 +1,25 @@
+
+<div class="container" *ngIf="total > 0">
+  <div  class="subContainer" style="width: 50%">
+    <p>Products in shopping cart:</p>
+    <ul>
+      <li *ngFor="let item of cart" class="product">
+          <div class="detail">{{item.details.productName}} </div>
+          <div class="detail"> {{item.details.price}} $</div>
+      </li>
+    </ul>
+    <hr class="line">
+    <p class="total">Total: {{total}} $</p>
+    <div class="btnContainer">
+      <button class="buyBtn" onclick="alert('We have received the order. You will receive a confirmation notification. Thank you for purchasing from our store')">Buy</button>
+      <button class="clearCart" (click)="clearCart()">Clear cart</button>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="emptyContainer" *ngIf="total == 0 || cart == null ">
+  <p>Your shopping cart is empty</p>
+  <button class="homeBtn" (click)="goToHome()">Go to Home</button>
+</div>

@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="subContainer">
+    <h3 class="title">Add Item</h3>
+    <form [formGroup]="addItem">
+
+      <label>
+        ProductName:
+        <input type="text" placeholder="required" formControlName="product" required>
+      </label>
+
+      <label>
+        Brand:
+        <input type="text" placeholder="required" formControlName="brand" required>
+      </label>
+
+      <label>
+        Model:
+        <input type="text" placeholder="required" formControlName="model" required>
+      </label>
+
+      <label>
+        Display:
+        <input type="text" formControlName="display">
+      </label>
+
+      <label>
+        Back camera:
+        <input type="text" formControlName="camera">
+      </label>
+
+      <label>
+        Front camera:
+        <input type="text" formControlName="camera2">
+      </label>
+
+      <label>
+        Battery:
+        <input type="text" formControlName="battery">
+      </label>
+
+      <label>
+        Cpu:
+        <input type="text" formControlName="cpu">
+      </label>
+
+      <label>
+        Memory:
+        <input type="text" formControlName="memory">
+      </label>
+
+      <label>
+        Ram:
+        <input type="text" formControlName="ram">
+      </label>
+
+      <label>
+        S.O.:
+        <input type="text" formControlName="so">
+      </label>
+
+      <label>
+        Price:
+        <input type="text" placeholder="required" formControlName="price" required>
+      </label>
+    </form>
+
+    <div class="btnContainer">
+      <button class="createBtn" [disabled]="!addItem.valid" (click)="newItem()">Create</button>
+    </div>
+
+    <div class="btnContainer">
+      <button class="backBtn" (click)="goBack()">Back</button>
+    </div>
+
+  </div>
+</div>
+
+

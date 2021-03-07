@@ -1,0 +1,27 @@
+<div class="container" *ngIf="this.item != undefined">
+  <div class="subContainer">
+    <h2>{{this.item.details.productName}}</h2>
+    <p><b>Brand:</b> {{this.item.details.brand}}</p>
+    <p><b>Model:</b> {{this.item.details.model}}</p>
+    <p><b>Display:</b> {{this.item.details.display}}</p>
+    <p><b>Back camera:</b> {{this.item.details.camera}}</p>
+    <p><b>Front Camera:</b> {{this.item.details.camera2}}</p>
+    <p><b>Battery:</b> {{this.item.details.battery}}</p>
+    <p><b>Cpu:</b> {{this.item.details.cpu}}</p>
+    <p><b>Memory:</b> {{this.item.details.memory}}</p>
+    <p><b>Ram:</b>{{this.item.details.ram}}</p>
+    <p><b>S.O.:</b> {{this.item.details.so}}</p>
+    <p><b>Price:</b> {{this.item.details.price}} $</p>
+    <button class="searchBtn" (click)="add()">🛒Add to cart</button>
+    <button class="backBtn" (click)="back()">Back</button>
+  </div>
+</div>
+
+<div class="errorContainer" *ngIf="this.item == undefined">
+  <div class="error">
+    <p>Error! Please turn back and try again.</p>
+    <button class="backBtn">Back</button>
+  </div>
+</div>
+
+

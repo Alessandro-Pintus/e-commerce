@@ -1,0 +1,218 @@
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .addToCartBtn {
+    left: 48px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .detailBtn {
+    position: unset !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .searchBar {
+    float: left !important;
+    margin-left: 7px !important;
+    width: 38vw !important;
+  }
+
+  .searchBtn {
+    margin-top: unset !important;
+    width: 57px !important;
+  }
+
+  .product,
+  .addProduct {
+    height: 200px !important;
+  }
+
+  .addProduct {
+    font-size: 29px !important;
+  }
+
+  .product h3 {
+    font-size: 21px !important;
+    margin-top: 35px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .product p {
+    font-size: 16px !important;
+    margin-bottom: 8px !important;
+    margin-top: 8px !important;
+  }
+
+
+  .detailBtn {
+    position: absolute;
+    bottom: 56px;
+    right: 20px;
+    width: 56px !important;
+  }
+
+  .addToCartBtn {
+    height: 37px !important;
+    margin-left: 0px !important;
+    width: 69px;
+    position: absolute;
+    bottom: 15px;
+    left: 14px;
+  }
+
+
+  .deleteBtn {
+    font-size: 14px !important;
+    width: 25px !important;
+    right: 4px !important;
+    top: 2px !important;
+  }
+}
+
+@media only screen and (max-width: 642px) and (orientation: landscape) {
+  .detailBtn {
+    position: absolute;
+    bottom: 15px !important;
+    left: 4px !important;
+    width: 56px !important;
+    height: 37px !important;
+  }
+
+  .addToCartBtn {
+    height: 37px !important;
+    margin-left: 0px !important;
+    width: 69px;
+    position: absolute;
+    bottom: 15px;
+    right: 12px;
+  }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+.searchContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.searchSpace{
+  width: 60vw;
+  text-align: center;
+  background-image: linear-gradient(120deg, #f6a3a3 0%, #80afc6 100%);
+  background-blend-mode: normal, multiply;
+  border-radius: 5px;
+  padding-bottom: 17px;
+  border: 1px solid lightgrey;
+}
+
+.searchBar {
+  width: 50vw;
+  height: 30px;
+  border-radius: 4px;
+  box-shadow:  inset 0 1px 1px rgba(0, 0, 0, .075);
+  border: 1px solid #ccc;
+}
+
+.searchBtn {
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  width: 69px;
+  height: 30px;
+}
+
+.productList,
+.product {
+  list-style-type: none;
+}
+
+.product {
+  position: relative;
+  border: 1px solid gray;
+  float:left;
+  width: 30%;
+  height: 177px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 5px 5px 5px 0;
+  background: beige;
+}
+
+.deleteBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  font-size: 19px;
+  width: 30px;
+  height: 25px;
+}
+
+.product h3 {
+  font-size: 25px;
+}
+
+.product p {
+  font-size: 20px;
+}
+
+.addProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  float:left;
+  width: 30%;
+  height: 177px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 5px 5px 5px 0;
+  background: beige;
+  font-size: 33px;
+}
+
+.filterItemContainer {
+  display: flex;
+}
+.filterList {
+  display: flex;
+  justify-content: center;
+  width: 96%;
+  padding: 0 40px 0 40px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.backBtn {
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  width: 130px;
+  height: 45px;
+}
+
+
+.addToCartBtn{
+  margin-left: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  height: 30px;
+}
+
+.detailBtn {
+  margin-left: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  height: 30px;
+}
+

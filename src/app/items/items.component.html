@@ -1,0 +1,44 @@
+<div class="searchContainer">
+    <div class="searchSpace">
+      <h2>Search products for brand</h2>
+      <p>*full brand name required</p>
+      <form (ngSubmit)="searchProduct()">
+        <input type="search" class="searchBar" [formControl]="search" minlength="2" maxlength="40">
+        <button class="searchBtn" type="submit">Search</button>
+      </form>
+    </div>
+</div>
+
+<div *ngIf="filter == false">
+  <ul class="productList">
+    <li *ngFor="let item of items" class="product">
+      <button class="deleteBtn" (click)="this.id = item.id; delete()">&#10060;</button>
+      <h3>{{ item.details.productName }}</h3>
+      <p>Price: {{ item.details.price }} $</p>
+      <button class="detailBtn" (click)="this.id = item.id; getDetail()">Details</button>
+      <button class="addToCartBtn" (click)="this.id = item.id; addToCart()">🛒Add to cart</button>
+    </li>
+    <li class="addProduct" (click)="addItem()">
+      Add product &#10133;
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="filter == true" class="filterItemContainer">
+  <ul class="filterList">
+    <li *ngFor="let item of filterItemList" class="product">
+      <p>{{item.details.productName}}</p>
+      <p>Price: {{item.details.price}} $</p>
+      <button class="detailBtn" (click)="this.id = item.id; getDetail()">Details</button>
+      <button class="addToCartBtn" (click)="this.id = item.id; addToCart()">🛒Add to cart</button>
+    </li>
+    <li class="addProduct" (click)="addItem()">
+      Add product &#10133;
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="filter == true" class="btnContainer">
+  <button (click)="filter = false" class="backBtn">Back</button>
+</div>
+
