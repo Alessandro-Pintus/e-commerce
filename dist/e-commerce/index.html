@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ECommerce</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+  <app-root></app-root>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAer3Volgi-K45hOlmUzy3PBbSoW-RePWI",
+      authDomain: "e-commerce-1b03a.firebaseapp.com",
+      projectId: "e-commerce-1b03a",
+      storageBucket: "e-commerce-1b03a.appspot.com",
+      messagingSenderId: "466193296139",
+      appId: "1:466193296139:web:60540957ae65369563100e"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+
+
+    // const firebase = require("firebase");
+    // Required for side-effects
+    // require("firebase/firestore");
+
+    var db = firebase.firestore();
+
+    // db.collection("items").get().then((querySnapshot) => {
+    //   querySnapshot.forEach((doc) => {
+    //     console.log(`${doc.id} => ${JSON.stringify(doc.data().productName)}`);
+
+    //   });
+    // });
+
+    // db.collection("items").get().then((querySnapshot) => {
+    //   querySnapshot.forEach((doc) => {
+    //     console.log(this.search)
+    //       console.log(`${doc.id} => ${JSON.stringify(doc.data().productName)}`);
+    //       if (doc.data().productName.indexOf(`${this.search}`) != -1) {
+    //         console.log('ciao')
+    //       }
+    //   });
+    // });
+
+  </script>
+
+<script src="runtime.js" defer></script><script src="polyfills.js" defer></script><script src="vendor.js" defer></script><script src="main.js" defer></script></body>
+</html>
