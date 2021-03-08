@@ -29,8 +29,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Node_module used
 
 { Component, OnInit , NgModule  } from '@angular/core';
+
 { Routes, Router, RouterModule } from '@angular/router';
+
 { AngularFirestore } from '@angular/fire/firestore';
+
 { FormBuilder, FormControl, Validators } from "@angular/forms";
+
 { Location } from "@angular/common";
 
